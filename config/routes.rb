@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
-  resources :sleep_records, only: [ :index ] do
+  resources :sleep_records do
     collection do
       post :clock_in
       patch "clock_out/:id", action: "clock_out"

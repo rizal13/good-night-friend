@@ -24,10 +24,10 @@ user_ids = users.map(&:id)
 
 # Create sleep records for users
 users.each_with_index do |user, i|
-  5.times do
+  3.times do
     user.sleep_records.create!(
-      clock_in: Faker::Time.backward(days: 7, period: :evening),
-      clock_out: Faker::Time.backward(days: 7, period: :morning)
+      clock_in: Time.current - 6.days - 7.hours,
+      clock_out: Time.current - 6.days
     )
   end
 
