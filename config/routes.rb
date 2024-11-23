@@ -7,4 +7,16 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  resources :sleep_records, only: [ :index ] do
+    collection do
+      post :clock_in
+      patch "clock_out/:id", action: "clock_out"
+      get ":user_id/me", action: "my_sleep_records"
+      get ":user_id/following", action: "following_sleep_records"
+      get ":user_id/follower", action: "follower_sleep_records"
+    end
+  end
+
+  resources :friends, only: [ :create, :destroy ]
 end
