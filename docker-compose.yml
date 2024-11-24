@@ -1,0 +1,9 @@
+services:
+  goodnight_friend_api:
+    container_name: goodnight_friend_api
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      RAILS_PORT: 3000
+      RAILS_MASTER_KEY: 954d76a482a58cb7865808bf09a65bd5
