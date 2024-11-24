@@ -1,4 +1,5 @@
 class SleepRecordsController < ApplicationController
+  before_action :validates_exist_user, only: [ :my_sleep_records, :following_sleep_records, :follower_sleep_records ]
   before_action :validates_clock_out, only: [ :clock_out ]
 
   def my_sleep_records
@@ -28,7 +29,7 @@ class SleepRecordsController < ApplicationController
   private
 
   def exist_user
-    @user ||= User.find(params[:user_id])
+    @user ||= User.find_by_id(params[:user_id])
   end
 
   def clock_in_times
@@ -70,6 +71,10 @@ class SleepRecordsController < ApplicationController
 
   def exist_sleep_record
     @exist_sleep_record ||= SleepRecord.find_by(id: params[:id])
+  end
+
+  def validates_exist_user
+    render_api(:not_found, "User not found") unless exist_user
   end
 
   def validates_clock_out

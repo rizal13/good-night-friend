@@ -64,6 +64,27 @@ class SleepRecordsControllerTest < ActionDispatch::IntegrationTest
     assert_equal sleep_record.id, json_response[:data][:id]
   end
 
+  test "should get my records return user not found" do
+    get self_sleep_records_url(user_id: 100)
+    assert_response :not_found
+    json_response = JSON.parse(response.body).with_indifferent_access
+    assert_equal "User not found", json_response[:message]
+  end
+
+  test "should get following records return user not found" do
+    get following_sleep_records_url(user_id: 100)
+    assert_response :not_found
+    json_response = JSON.parse(response.body).with_indifferent_access
+    assert_equal "User not found", json_response[:message]
+  end
+
+  test "should get follower records return user not found" do
+    get follower_sleep_records_url(user_id: 100)
+    assert_response :not_found
+    json_response = JSON.parse(response.body).with_indifferent_access
+    assert_equal "User not found", json_response[:message]
+  end
+
   test "should clock out return not found" do
     patch clock_out_sleep_records_url(id: 100)
     assert_response :not_found

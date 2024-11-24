@@ -13,7 +13,7 @@
       <img src="./assets/0.13.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2024-11-24T13:24:14+07:00">2024-11-24T13:24:14+07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2024-11-24T14:27:45+07:00">2024-11-24T14:27:45+07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -29,7 +29,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.63
+         1.75
        </span>
     </span> hits/line
     )
@@ -42,8 +42,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>99</b> relevant lines,
-    <span class="green"><b>99</b> lines covered</span> and
+    <b>102</b> relevant lines,
+    <span class="green"><b>102</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -76,7 +76,7 @@
             <td class="cell--number">3</td>
             <td class="cell--number">3</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">4.00</td>
+            <td class="cell--number">5.00</td>
             
           </tr>
         
@@ -94,11 +94,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#b9fc58fff14c264d6b08fb5c70724ee2e67e11b7" class="src_link" title="app/controllers/sleep_records_controller.rb">app/controllers/sleep_records_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">80</td>
-            <td class="cell--number">37</td>
-            <td class="cell--number">37</td>
+            <td class="cell--number">85</td>
+            <td class="cell--number">40</td>
+            <td class="cell--number">40</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.35</td>
+            <td class="cell--number">1.60</td>
             
           </tr>
         
@@ -220,7 +220,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.5
+         1.72
        </span>
     </span> hits/line
     )
@@ -233,8 +233,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>54</b> relevant lines,
-    <span class="green"><b>54</b> lines covered</span> and
+    <b>57</b> relevant lines,
+    <span class="green"><b>57</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -267,7 +267,7 @@
             <td class="cell--number">3</td>
             <td class="cell--number">3</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">4.00</td>
+            <td class="cell--number">5.00</td>
             
           </tr>
         
@@ -285,11 +285,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#b9fc58fff14c264d6b08fb5c70724ee2e67e11b7" class="src_link" title="app/controllers/sleep_records_controller.rb">app/controllers/sleep_records_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">80</td>
-            <td class="cell--number">37</td>
-            <td class="cell--number">37</td>
+            <td class="cell--number">85</td>
+            <td class="cell--number">40</td>
+            <td class="cell--number">40</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.35</td>
+            <td class="cell--number">1.60</td>
             
           </tr>
         
@@ -865,9 +865,9 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="10" data-linenumber="3">
+          <li class="covered" data-hits="13" data-linenumber="3">
             
-              <span class="hits">10</span>
+              <span class="hits">13</span>
             
 
             
@@ -1324,8 +1324,8 @@
     
 
     <div class="t-line-summary">
-      <b>37</b> relevant lines.
-      <span class="green"><b>37</b> lines covered</span> and
+      <b>40</b> relevant lines.
+      <span class="green"><b>40</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -1356,29 +1356,29 @@
 
             
 
-            <code class="ruby">  before_action :validates_clock_out, only: [ :clock_out ]</code>
+            <code class="ruby">  before_action :validates_exist_user, only: [ :my_sleep_records, :following_sleep_records, :follower_sleep_records ]</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="3">
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
+          <li class="covered" data-hits="1" data-linenumber="3">
             
               <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  def my_sleep_records</code>
+            <code class="ruby">  before_action :validates_clock_out, only: [ :clock_out ]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+
+            
+
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -1390,17 +1390,19 @@
 
             
 
-            <code class="ruby">    render_api(:ok, &quot;ok&quot;, my_weekly_sleeps)</code>
+            <code class="ruby">  def my_sleep_records</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="6">
+          <li class="covered" data-hits="1" data-linenumber="6">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    render_api(:ok, &quot;ok&quot;, my_weekly_sleeps)</code>
           </li>
         </div>
       
@@ -1410,19 +1412,17 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
-            
-              <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="8">
             
 
             
 
-            <code class="ruby">  def following_sleep_records</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -1434,17 +1434,19 @@
 
             
 
-            <code class="ruby">    render_api(:ok, &quot;ok&quot;, following_weekly_sleeps)</code>
+            <code class="ruby">  def following_sleep_records</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
+          <li class="covered" data-hits="1" data-linenumber="10">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    render_api(:ok, &quot;ok&quot;, following_weekly_sleeps)</code>
           </li>
         </div>
       
@@ -1454,19 +1456,17 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="12">
-            
-              <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="12">
             
 
             
 
-            <code class="ruby">  def follower_sleep_records</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -1478,17 +1478,19 @@
 
             
 
-            <code class="ruby">    render_api(:ok, &quot;ok&quot;, follower_weekly_sleeps)</code>
+            <code class="ruby">  def follower_sleep_records</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="14">
+          <li class="covered" data-hits="1" data-linenumber="14">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    render_api(:ok, &quot;ok&quot;, follower_weekly_sleeps)</code>
           </li>
         </div>
       
@@ -1498,19 +1500,17 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="16">
-            
-              <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="16">
             
 
             
 
-            <code class="ruby">  def clock_in</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -1522,12 +1522,24 @@
 
             
 
+            <code class="ruby">  def clock_in</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="18">
+            
+              <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    return render_api(:unprocessable_entity, new_sleep_record.errors.full_messages.first) unless new_sleep_record.save</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="18">
+          <li class="never" data-hits="" data-linenumber="19">
             
 
             
@@ -1537,7 +1549,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="19">
+          <li class="covered" data-hits="1" data-linenumber="20">
             
               <span class="hits">1</span>
             
@@ -1549,7 +1561,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="20">
+          <li class="never" data-hits="" data-linenumber="21">
             
 
             
@@ -1559,24 +1571,12 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="21">
+          <li class="never" data-hits="" data-linenumber="22">
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="22">
-            
-              <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  def clock_out</code>
           </li>
         </div>
       
@@ -1588,12 +1588,24 @@
 
             
 
+            <code class="ruby">  def clock_out</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="24">
+            
+              <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    return render_api(:unprocessable_entity, exist_sleep_record.errors.full_messages.first) unless exist_sleep_record.update(clock_out: Time.current)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="24">
+          <li class="never" data-hits="" data-linenumber="25">
             
 
             
@@ -1603,7 +1615,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="25">
+          <li class="covered" data-hits="1" data-linenumber="26">
             
               <span class="hits">1</span>
             
@@ -1615,7 +1627,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="26">
+          <li class="never" data-hits="" data-linenumber="27">
             
 
             
@@ -1625,7 +1637,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="27">
+          <li class="never" data-hits="" data-linenumber="28">
             
 
             
@@ -1635,7 +1647,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="28">
+          <li class="covered" data-hits="1" data-linenumber="29">
             
               <span class="hits">1</span>
             
@@ -1647,7 +1659,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="29">
+          <li class="never" data-hits="" data-linenumber="30">
             
 
             
@@ -1657,7 +1669,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="30">
+          <li class="covered" data-hits="1" data-linenumber="31">
             
               <span class="hits">1</span>
             
@@ -1669,24 +1681,14 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="31">
+          <li class="covered" data-hits="9" data-linenumber="32">
             
-              <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">    @user ||= User.find(params[:user_id])</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="32">
+              <span class="hits">9</span>
             
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    @user ||= User.find_by_id(params[:user_id])</code>
           </li>
         </div>
       
@@ -1696,19 +1698,17 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="34">
-            
-              <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="34">
             
 
             
 
-            <code class="ruby">  def clock_in_times</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -1720,17 +1720,19 @@
 
             
 
-            <code class="ruby">    @clock_ins ||= SleepRecord.select(:id, :clock_in, :created_at)</code>
+            <code class="ruby">  def clock_in_times</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="36">
+          <li class="covered" data-hits="1" data-linenumber="36">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">                              .where(user_id: params[:user_id])</code>
+            <code class="ruby">    @clock_ins ||= SleepRecord.select(:id, :clock_in, :created_at)</code>
           </li>
         </div>
       
@@ -1740,7 +1742,7 @@
 
             
 
-            <code class="ruby">                              .order(created_at: :desc)</code>
+            <code class="ruby">                              .where(user_id: params[:user_id])</code>
           </li>
         </div>
       
@@ -1750,7 +1752,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">                              .order(created_at: :desc)</code>
           </li>
         </div>
       
@@ -1760,19 +1762,17 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="40">
-            
-              <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="40">
             
 
             
 
-            <code class="ruby">  def my_weekly_sleeps</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -1784,17 +1784,19 @@
 
             
 
-            <code class="ruby">    @my_sleeps ||= SleepRecord.includes(:user)</code>
+            <code class="ruby">  def my_weekly_sleeps</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="42">
+          <li class="covered" data-hits="1" data-linenumber="42">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">                              .last_week_by_users(exist_user)</code>
+            <code class="ruby">    @my_sleeps ||= SleepRecord.includes(:user)</code>
           </li>
         </div>
       
@@ -1804,12 +1806,22 @@
 
             
 
+            <code class="ruby">                              .last_week_by_users(exist_user)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="44">
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="44">
+          <li class="covered" data-hits="1" data-linenumber="45">
             
               <span class="hits">1</span>
             
@@ -1821,7 +1833,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="45">
+          <li class="never" data-hits="" data-linenumber="46">
             
 
             
@@ -1831,24 +1843,12 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="46">
+          <li class="never" data-hits="" data-linenumber="47">
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="47">
-            
-              <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  def following_weekly_sleeps</code>
           </li>
         </div>
       
@@ -1860,17 +1860,19 @@
 
             
 
-            <code class="ruby">    @following_sleeps ||= SleepRecord.includes(:user)</code>
+            <code class="ruby">  def following_weekly_sleeps</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="49">
+          <li class="covered" data-hits="1" data-linenumber="49">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">                                     .last_week_by_users(exist_user.following.map(&amp;:friend_id))</code>
+            <code class="ruby">    @following_sleeps ||= SleepRecord.includes(:user)</code>
           </li>
         </div>
       
@@ -1880,12 +1882,22 @@
 
             
 
+            <code class="ruby">                                     .last_week_by_users(exist_user.following.map(&amp;:friend_id))</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="51">
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="51">
+          <li class="covered" data-hits="1" data-linenumber="52">
             
               <span class="hits">1</span>
             
@@ -1897,7 +1909,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="52">
+          <li class="never" data-hits="" data-linenumber="53">
             
 
             
@@ -1907,24 +1919,12 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="53">
+          <li class="never" data-hits="" data-linenumber="54">
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="54">
-            
-              <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  def follower_weekly_sleeps</code>
           </li>
         </div>
       
@@ -1936,17 +1936,19 @@
 
             
 
-            <code class="ruby">    @follower_sleeps ||= SleepRecord.includes(:user)</code>
+            <code class="ruby">  def follower_weekly_sleeps</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="56">
+          <li class="covered" data-hits="1" data-linenumber="56">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">                                    .last_week_by_users(exist_user.followers.map(&amp;:user_id))</code>
+            <code class="ruby">    @follower_sleeps ||= SleepRecord.includes(:user)</code>
           </li>
         </div>
       
@@ -1956,12 +1958,22 @@
 
             
 
+            <code class="ruby">                                    .last_week_by_users(exist_user.followers.map(&amp;:user_id))</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="58">
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="58">
+          <li class="covered" data-hits="1" data-linenumber="59">
             
               <span class="hits">1</span>
             
@@ -1973,7 +1985,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="59">
+          <li class="never" data-hits="" data-linenumber="60">
             
 
             
@@ -1983,7 +1995,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="60">
+          <li class="never" data-hits="" data-linenumber="61">
             
 
             
@@ -1993,7 +2005,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="61">
+          <li class="covered" data-hits="1" data-linenumber="62">
             
               <span class="hits">1</span>
             
@@ -2005,7 +2017,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="62">
+          <li class="covered" data-hits="3" data-linenumber="63">
             
               <span class="hits">3</span>
             
@@ -2017,7 +2029,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="63">
+          <li class="never" data-hits="" data-linenumber="64">
             
 
             
@@ -2027,7 +2039,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="64">
+          <li class="never" data-hits="" data-linenumber="65">
             
 
             
@@ -2037,7 +2049,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="65">
+          <li class="never" data-hits="" data-linenumber="66">
             
 
             
@@ -2047,24 +2059,12 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="66">
+          <li class="never" data-hits="" data-linenumber="67">
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="67">
-            
-              <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  def new_sleep_record</code>
           </li>
         </div>
       
@@ -2076,17 +2076,19 @@
 
             
 
-            <code class="ruby">    @new_sleep_record ||= SleepRecord.new(user_id: params[:user_id], clock_in: Time.current)</code>
+            <code class="ruby">  def new_sleep_record</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="69">
+          <li class="covered" data-hits="1" data-linenumber="69">
+            
+              <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    @new_sleep_record ||= SleepRecord.new(user_id: params[:user_id], clock_in: Time.current)</code>
           </li>
         </div>
       
@@ -2096,12 +2098,22 @@
 
             
 
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="71">
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="71">
+          <li class="covered" data-hits="1" data-linenumber="72">
             
               <span class="hits">1</span>
             
@@ -2113,7 +2125,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="72">
+          <li class="covered" data-hits="7" data-linenumber="73">
             
               <span class="hits">7</span>
             
@@ -2125,7 +2137,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="73">
+          <li class="never" data-hits="" data-linenumber="74">
             
 
             
@@ -2135,7 +2147,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="74">
+          <li class="never" data-hits="" data-linenumber="75">
             
 
             
@@ -2145,7 +2157,51 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="75">
+          <li class="covered" data-hits="1" data-linenumber="76">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def validates_exist_user</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="6" data-linenumber="77">
+            
+              <span class="hits">6</span>
+            
+
+            
+
+            <code class="ruby">    render_api(:not_found, &quot;User not found&quot;) unless exist_user</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="78">
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="79">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="80">
             
               <span class="hits">1</span>
             
@@ -2157,7 +2213,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="76">
+          <li class="covered" data-hits="3" data-linenumber="81">
             
               <span class="hits">3</span>
             
@@ -2169,7 +2225,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="77">
+          <li class="never" data-hits="" data-linenumber="82">
             
 
             
@@ -2179,7 +2235,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="78">
+          <li class="covered" data-hits="2" data-linenumber="83">
             
               <span class="hits">2</span>
             
@@ -2191,7 +2247,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="79">
+          <li class="never" data-hits="" data-linenumber="84">
             
 
             
@@ -2201,7 +2257,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="80">
+          <li class="never" data-hits="" data-linenumber="85">
             
 
             
