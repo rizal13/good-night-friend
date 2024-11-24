@@ -12,38 +12,38 @@ Good Night Friend is a RESTful API built with Ruby on Rails that allows users to
 # API Endpoints
 ## Sleep Records
 1. Clock In \
-**POST /sleep_records/clock_in** \
+**POST** ```/sleep_records/clock_in``` \
 Body Params: ***user_id** (current user id) \
 Records the start of a user's sleep.
 
 2. Clock Out \
-**PATCH /sleep_records/clock_out/{id}** \
+**PATCH** ```/sleep_records/clock_out/{id}``` \
 Path Params: ***id** (sleep record id) \
 Records the end of a user's sleep.
 
 3. Get My Sleep Records \
-**GET /sleep_records/{user_id}/me** \
+**GET** ```/sleep_records/{user_id}/me``` \
 Path Params: ***{user_id}** (current user id) \
 Returns all sleep records for current users from previous week.
 
 4. Get Following Friend Sleep Records \
-**GET /sleep_records/{user_id}/following** \
+**GET** ```/sleep_records/{user_id}/following``` \
 Path Params: ***{user_id}** (current user id) \
 Returns all sleep records for following users from previous week.
 
 5. Get Follower Friend Sleep Records \
-**GET /sleep_records/{user_id}/follower** \
+**GET** ```/sleep_records/{user_id}/follower``` \
 Path Params: ***{user_id}** (current user id) \
 Returns all sleep records for user followers from previous week.
 
 ## Friends Relationship
 1. Follow a Friend \
-**POST /friends** \
+**POST** ```/friends``` \
 Body Params: ***user_id** (follower user id), ***friend_id** (following user id) \
 Creates a friend follow relationship between two users.
 
 2. Unfollow a Friend \
-**DELETE /friends/{user_id}** \
+**DELETE** ```/friends/{user_id}``` \
 Path Params: ***{user_id}** (follower user id) \
 Body Params: ***friend_id** (following user id) \
 Remove a friend follow relationship between two users.
@@ -103,11 +103,14 @@ docker compose up
 
 
 # Testing
-This project using minitest for it's simplicity and assessment demo purpose. \
+This project utilizes Minitest for its simplicity and suitability for demonstration purposes in the assessment.
+* Additionally, it integrates the ```codecov``` gem to measure and report code coverage.
+
 Run the test suite with:
 ```
 rails test
 ```
+<img width="1499" alt="image" src="https://github.com/user-attachments/assets/882f2725-0af1-4f44-8277-c9b735c690df">
 
 
 # Example Usage
@@ -126,7 +129,7 @@ curl -X PATCH http://localhost:3000/sleep_records/clock_out/3 \
 
 ## Following Friend Sleep Records
 ```
-curl -X PATCH http://localhost:3000/sleep_records/2/following \
+curl -X GET http://localhost:3000/sleep_records/2/following \
 -H "Content-Type: application/json"
 ```
 

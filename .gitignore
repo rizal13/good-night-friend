@@ -33,3 +33,6 @@
 
 # Ignore Cheatsheet
 notes
+
+# Ignore coverage
+coverage
