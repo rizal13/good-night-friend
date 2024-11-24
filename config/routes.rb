@@ -11,10 +11,10 @@ Rails.application.routes.draw do
   resources :sleep_records do
     collection do
       post :clock_in
-      patch "clock_out/:id", action: "clock_out"
-      get ":user_id/me", action: "my_sleep_records"
-      get ":user_id/following", action: "following_sleep_records"
-      get ":user_id/follower", action: "follower_sleep_records"
+      patch "clock_out/:id", action: "clock_out", as: :clock_out
+      get ":user_id/me", action: "my_sleep_records", as: :self
+      get ":user_id/following", action: "following_sleep_records", as: :following
+      get ":user_id/follower", action: "follower_sleep_records", as: :follower
     end
   end
 

@@ -2,7 +2,7 @@ module FriendValidation
   extend ActiveSupport::Concern
 
   included do
-    validates :user_id, uniqueness: { scope: :friend_id }
+    validates :user_id, uniqueness: { scope: :friend_id, message: "already has this friend" }
     validate :user_cannot_be_friend_of_themselves
   end
 

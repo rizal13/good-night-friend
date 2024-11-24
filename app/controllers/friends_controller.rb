@@ -2,7 +2,9 @@ class FriendsController < ApplicationController
   def create
     return render_api(:unprocessable_entity, new_friend.errors.full_messages.first) unless new_friend.save
 
-    render_api(:created, "ok", new_friend)
+    render_api(:created,
+               "ok",
+               friend_relation_serializer(new_friend))
   end
 
   def destroy
@@ -19,5 +21,11 @@ class FriendsController < ApplicationController
 
   def exist_friend
     @exist_friend ||= Friend.find_by(user_id: params[:id], friend_id: params[:friend_id])
+  end
+
+  def friend_relation_serializer(data)
+    ActiveModelSerializers::SerializableResource.new(data,
+                                                    serializer: FriendRelationSerializer,
+                                                    adapter: :attributes).as_json
   end
 end

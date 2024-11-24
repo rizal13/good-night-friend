@@ -1,7 +1,10 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: User 1
+user_a:
+  name: User A
 
-two:
-  name: User 2
+user_b:
+  name: User B
+
+user_c:
+  name: User C

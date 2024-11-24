@@ -50,3 +50,7 @@ group :development, :test do
 
   gem "faker"
 end
+
+group :test do
+  gem "simplecov", require: false
+end

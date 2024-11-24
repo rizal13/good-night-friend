@@ -32,7 +32,9 @@ class SleepRecordsController < ApplicationController
   end
 
   def clock_in_times
-    @clock_ins ||= SleepRecord.select(:id, :clock_in, :created_at).order(created_at: :desc)
+    @clock_ins ||= SleepRecord.select(:id, :clock_in, :created_at)
+                              .where(user_id: params[:user_id])
+                              .order(created_at: :desc)
   end
 
   def my_weekly_sleeps
